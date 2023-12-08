@@ -599,7 +599,6 @@ footer .copywrite{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(images/hero/hero11.jpg);
     background-position: 30%;
     background-size: cover;
-    background-repeat: no-repeat;
   }
   #hero h4,
   #hero h2,
