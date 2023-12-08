@@ -134,6 +134,7 @@ body{
 }
 #hero h4, #hero h2, #hero p{
   color: white;
+  background: black;
 }
 #hero button a{
   background-image:url(images/hero/button.png);
