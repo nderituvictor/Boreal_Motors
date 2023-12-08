@@ -191,6 +191,48 @@ body{
 #feature .fe-box:nth-child(6) h6{
   background: #fff2e5;
 }
+#social-media{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#social-media .socials{
+  width: 50%;
+  height: 40px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.socials a{
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px 60px;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px grey;
+  transition: .3s ease;
+}
+.socials a:hover{
+  box-shadow: 2px 2px 10px black;
+}
+.socials .facebook a{
+ font-size: 20px;
+ font-weight: 600;
+ background-color: #4267B2;
+}
+.socials .whatsapp a{
+ font-size: 20px;
+ font-weight: 600;
+ background-color: green;
+}
+.socials a i{
+  color: white;
+}
+
 #product1{
   text-align: center;
 }
@@ -595,9 +637,10 @@ footer .copywrite{
   }
   #hero{
     padding: 0 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(images/hero/hero11.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url(images/hero/hero11.jpg);
     background-position: 30%;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   #hero h4,
   #hero h2,
@@ -612,6 +655,17 @@ footer .copywrite{
     padding: 0;
     margin: 0;
   }
+  #social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #social-media .socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   #page-header.blog-header{
     background-size: contain ;
     background-position: center;

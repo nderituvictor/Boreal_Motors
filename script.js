@@ -7,6 +7,16 @@ const section = document.getElementById('feature')
 const proContainer = document.querySelector('.pro-container')
 const pageHeader = document.querySelector('#page-header')
 
+if (bar) {
+  bar.addEventListener('click', () => {
+    nav.classList.add('active')
+  })
+} 
+if(close){
+  close.addEventListener('click', () => {
+    nav.classList.remove('active')
+  })
+}
 
 let intervalId = setInterval(function () {
   const random = Math.floor(Math.random()* dataList.length)
@@ -50,16 +60,7 @@ saleList.forEach((sale) => {
 proContainer.innerHTML += items
 })
 
-if (bar) {
-  bar.addEventListener('click', () => {
-    nav.classList.add('active')
-  })
-} 
-if(close){
-  close.addEventListener('click', () => {
-    nav.classList.remove('active')
-  })
-}
+
 
 
 
